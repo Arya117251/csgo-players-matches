@@ -44,4 +44,13 @@ This project uses real player and match data to explore stats, engineer features
 
 ---
 
+## ✨ Future Improvements
+- Apply classification models for **win/loss prediction**  
+- Expand dataset with **map-specific or role-specific stats**  
+- Build an **interactive web dashboard** for coaches/players  
 
+---
+
+## 👤 Author
+**Arya Belhe**  
+➗ Math Enthusiast | 💼 Aspiring Business Analyst | 📊 Data & Insights Explorer
