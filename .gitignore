@@ -1,0 +1,41 @@
+# Raw data (ignore)
+archive/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.py[cod]
+*$py.class
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+*.key
+*_key.txt
+*api_key*
+credentials.json
+
+# IDE folders
+.vscode/
+.idea/
+*.swp
+*.swo
+.vscode/*
+.idea/*
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Note: dashboard_data/ folder is NOT ignored - cleaned CSVs will be tracked
+# Note: All .py files and README.md are tracked by default
