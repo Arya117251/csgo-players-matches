@@ -1,5 +1,8 @@
-# Raw data (ignore)
+# Raw data (ignore archive folder but keep cleaned data and prepare script)
 archive/
+!archive/prepare_data.py
+!archive/cleaned_data/
+!archive/cleaned_data/*.csv
 
 # Python cache
 __pycache__/
