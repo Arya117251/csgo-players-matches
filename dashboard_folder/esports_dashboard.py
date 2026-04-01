@@ -374,7 +374,7 @@ def color_rating(val):
     else:
         return f'background-color: #1a1d29; color: white'
 
-styled_table = top_players.style.applymap(color_rating, subset=['Rating'])
+styled_table = top_players.style.map(color_rating, subset=['Rating'])
 
 st.dataframe(styled_table, use_container_width=True, height=400)
 
