@@ -121,10 +121,10 @@ st.markdown("""
 @st.cache_data
 def load_data():
     """Load and cache the cleaned datasets"""
-    data_path = r'C:\claude\archive\cleaned_data'
+    data_path = 'C:/claude/archive/cleaned_data'
 
-    players_df = pd.read_csv(os.path.join(data_path, 'players_clean.csv'))
-    matches_df = pd.read_csv(os.path.join(data_path, 'matches_clean.csv'))
+    players_df = pd.read_csv(f'{data_path}/players_clean.csv')
+    matches_df = pd.read_csv(f'{data_path}/matches_clean.csv')
 
     return players_df, matches_df
 
