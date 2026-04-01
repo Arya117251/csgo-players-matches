@@ -121,10 +121,12 @@ st.markdown("""
 @st.cache_data
 def load_data():
     """Load and cache the cleaned datasets"""
-    data_path = 'C:/claude/archive/cleaned_data'
+    # Use relative path for Streamlit Cloud deployment
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    data_path = os.path.join(script_dir, '..', 'archive', 'cleaned_data')
 
-    players_df = pd.read_csv(f'{data_path}/players_clean.csv')
-    matches_df = pd.read_csv(f'{data_path}/matches_clean.csv')
+    players_df = pd.read_csv(os.path.join(data_path, 'players_clean.csv'))
+    matches_df = pd.read_csv(os.path.join(data_path, 'matches_clean.csv'))
 
     return players_df, matches_df
 
